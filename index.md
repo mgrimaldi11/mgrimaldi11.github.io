@@ -1,6 +1,10 @@
 ## Summary
 
-I am a Postdoctoral Researcher in the Department of Control and Computer Engineering at Politecnico di Torino, where I am currently working on efficient algorithms for computation‐intensive AI applications. Specifically, my research is devoted to developing novel compression techniques and optimization strategies to deploy deep learning models on resource‐constrained devices. Moreover, I am investigating novel approaches to enable continual learning at the edge. Being fascinated by human intelligence, I am thrilled to learn how to teach machines to mimic it.
+I am a Postdoctoral Researcher in the Department of Control and Computer Engineering at Politecnico di Torino, where I am currently working on efficient algorithms for computation‐intensive AI applications. 
+
+Specifically, my research is devoted to developing novel compression techniques and optimization strategies to deploy deep learning models on resource‐constrained devices. Moreover, I am investigating novel approaches to enable continual learning at the edge. 
+
+Being fascinated by human intelligence, I am thrilled to learn how to teach machines to mimic it.
 
 <!-- You can use the [editor on GitHub](https://github.com/mgrimaldi11/mgrimaldi11.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files. -->
 
