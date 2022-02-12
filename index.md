@@ -1,10 +1,12 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/mgrimaldi11/mgrimaldi11.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+I am a Postdoctoral Researcher in the Department of Control and Computer Engineering at Politecnico di Torino, where I am currently working on efficient algorithms for computation‐intensive AI applications. Specifically, my research is devoted to developing novel compression techniques and optimization strategies to deploy deep learning models on resource‐constrained devices. Moreover, I am investigating novel approaches to enable continual learning at the edge. Being fascinated by human intelligence, I am thrilled to learn how to teach machines to mimic it.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!-- You can use the [editor on GitHub](https://github.com/mgrimaldi11/mgrimaldi11.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files. -->
 
-### Markdown
+<!-- Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files. -->
+
+<!-- ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -34,4 +36,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out. -->
