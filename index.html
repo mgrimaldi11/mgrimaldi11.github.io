@@ -1,117 +1,164 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width,initial-scale=1.0">
-    <title>Tate Johnson</title>
-    <link rel="alternate" type="application/atom+xml" href="{{ "/feed.xml" | relative_url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon16.png" | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon32.png" | relative_url }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ "/favicon96.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/favicon152.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="167x167" href="{{ "/favicon167.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/favicon180.png" | relative_url }}">
+    <title>MG</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🤌undefined</text></svg>">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{ "/share.png" | absolute_url }}">
+    <meta name="twitter:image" content="./assets/img/intro.png">
     <meta name="og:type" content="article">
     <meta name="og:url" content="{{ '/' | absolute_url }}">
-    <meta name="og:title" content="Tate Johnson">
-    <meta name="og:description" content="Tate Johnson">
-    <meta name="og:image" content="{{ "/share.png" | absolute_url }}">
+    <meta name="og:title" content="PP">
+    <meta name="og:description" content="Ciao, I'm Matteo, a research scientist passionate about efficient deep learning.">
+    <meta name="og:image" content="./assets/img/intro.png">
     <style type="text/css">
-      html {
-        background: #222222;
-        color: #ffffff;
-        font-family: "Georgia", "Times New Roman", serif;
-        font-size: 18px;
-        line-height: 30px;
-      }
-
-      @media only screen and (min-width: 481px) {
         html {
-          font-size: 21px;
-          line-height: 32px;
+            background: #222222;
+            color: #ffffff;
+            font-family: "Calibri", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 30px;
         }
-      }
 
-      body {
-        margin: 37px 5%;
-      }
+        @media only screen and (min-width: 481px) {
+            html {
+                font-size: 21px;
+                line-height: 32px;
+            }
+        }
 
-      @media only screen and (min-width: 481px) {
         body {
-          margin: 75px auto;
-          width: 550px;
+            margin: 37px 5%;
         }
-      }
 
-      h1 {
-        background: url("{{ "/lime.png" | relative_url }}") top left;
-        width: 202px;
-        height: 202px;
-        margin: 0 auto 37px auto;
-        display: block
-      }
+        @media only screen and (min-width: 481px) {
+            body {
+                margin: 75px auto;
+                width: 550px;
+            }
+        }
 
-      h1:active,
-      h1:hover {
-        background-position: bottom left;
-      }
+        /* Define a class for the rounded image */
+        .rounded-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 0 auto; /* Center horizontally */
+            display: flex;
+            justify-content: center; /* Center horizontally within the container */
+            align-items: flex-end; /* Align content at the bottom */
+            background: url("./assets/img/intro.png") no-repeat center center; /* Updated image path */
+            background-size: 110%; /* Zoom in the image by 10% */
+        }
 
-      h1 > span {
-        display: none;
-      }
+        a {
+            color: #ebffb4;
+            text-decoration: underline;
+        }
 
-      a {
-        color: #ebffb4;
-        text-decoration: underline;
-      }
+        a:hover,
+        a:focus,
+        a:active {
+            color: #222222;
+            background: #ebffb4;
+            text-decoration: none;
+        }
 
-      a:hover,
-      a:focus,
-      a:active {
-        color: #222222;
-        background: #ebffb4;
-        text-decoration: none;
-      }
+        p,
+        ul,
+        .hr {
+            margin: 0;
+            margin-bottom: 37px;
+        }
 
-      p,
-      ul,
-      .hr {
-        margin: 0;
-        margin-bottom: 37px;
-      }
+        ul {
+            padding: 0;
+        }
 
-      ul {
-        padding: 0;
-      }
+        ul > li {
+            margin-left: 23px;
+        }
 
-      ul > li {
-        margin-left: 23px;
-      }
+        .hr {
+            background: transparent;
+            border-bottom: 1px solid #444444;
+            border-top: 1px solid #111111;
+        }
 
-      .hr {
-        background: transparent;
-        border-bottom: 1px solid #444444;
-        border-top: 1px solid #111111;
-      }
+        /* Updated styles for the portfolio section */
+        .portfolio {
+            text-align: center; /* Center align the whole portfolio section */
+            margin-top: 20px; /* Adjust this margin as needed */
+        }
+
+        .nowrap {
+            display: flex; /* Display links in a horizontal row */
+            justify-content: center; /* Center links horizontally */
+            align-items: center; /* Center links vertically */
+            list-style: none; /* Remove default list style */
+            padding: 0;
+        }
+
+        .particles-icon {
+            margin: 0 10px; /* Add space between icons */
+            font-size: 32px; /* Increase icon size as needed */
+            color: #333; /* Change icon color if needed */
+            transition: color 0.3s ease; /* Add a smooth color transition effect */
+        }
+
+        .particles-icon:hover {
+            color: #007bff; /* Change color on hover */
+        }
+        
+        /* Style for the emojis in the bio */
+        .bio-emojis {
+            font-size: 24px; /* Adjust the size of emojis as needed */
+            margin-left: 5px; /* Add a small margin between text and emojis */
+        }
     </style>
-  </head>
-  <body>
-    <h1><span>Tate Johnson</span></h1>
-    <p>Hey there, my name is Tate Johnson and I'm the CTO at <a href="https://thelookoutway.com">The Lookout Way</a>. I'm also the creator of <a href="https://antennamate.com">Antenna Mate</a> which has been a top paid utility app on the App Store for the last 10+ years.</p>
-    <p>Earlier I lead iOS development at <a href="https://lifx.com">LIFX</a>, built the foundations of the <a href="https://cloud.lifx.com">LIFX Cloud</a>, and built the LIFX Nest integration. Earlier then that I was a key engineer at <a href="https://www.everydayhero.com">Everyday Hero</a> before the company was acquired by <a href="https://www.blackbaud.com">Blackbaud</a>. Even earlier I was a contract web designer. I hold a Bachelor of Information Technology from <a href="https://www.griffith.edu.au">Griffith University</a>.</p>
-    <p>I'd love to hear from you. I'm <a href="mailto:tate@tatey.com">tate@tatey.com</a> on email, <a rel="me" href="https://bne.social/@tatey">@tatey@bne.social</a> on Mastodon, and <a href="https://github.com/tatey">tatey</a> on GitHub.</p>
-    <div class="hr"></div>
-    <p>Read my blog posts or subscribe to my <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a>:</p>
-    <ul>
-      {% for post in site.posts %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+</head>
+<body>
+<!-- Display the rounded image -->
+<div class="rounded-image"></div>
+
+<h1><span>Matteo Grimaldi</span></h1>
+<p>Ciao, I'm Matteo, a researcher deeply passionate about advancing machine learning to mimic human intelligence.</p>
+<p>I hold a PhD in Computer Engineering from <a href="https://www.polito.it/" target="_blank">Politecnico di Torino (2021)</a>, where I specialized in HW-aware compression techniques for Deep Neural Networks. Currently, I am a research scientist at <a href="https://www.deeplite.ai/" target="_blank">Deeplite</a> working on efficient deep learning.</p>
+<p>In my free time, I'm a sports enthusiast, with football and trail running being my favorite activities. <span class="bio-emojis">🤖 🦍 ⚽ 🏔️</span></p>
+<div class="hr"></div>
+
+<!-- Portfolio Section -->
+<div class="portfolio">
+    <h2></h2>
+    <ul class="nowrap">
         <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title | smartify }}</a>, {{ post.date | date: "%b %Y" }}
+            <a class="particles-icon no-hover-effect" href="https://scholar.google.com/citations?user=Li60pj4AAAAJ" target="_blank">
+                <img src="./assets/img/scholar.svg" alt="Google Scholar" width="32" height="32">
+            </a>
         </li>
-      {% endfor %}
+        <li>
+            <a class="particles-icon no-hover-effect" href="https://github.com/matteog11" target="_blank">
+                <img src="./assets/img/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+        </li>
+        <li>
+            <a class="particles-icon no-hover-effect" href="https://www.linkedin.com/in/matteogrimaldi11/" target="_blank">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn" width="32" height="32">
+            </a>
+        </li>
+        <li>
+            <a class="particles-icon no-hover-effect" href="mailto:matteogrimaldi11@gmail.com">
+                <img src="./assets/img/email.svg" alt="Email" width="40" height="40">
+            </a>
+        </li>
+        <li>
+            <a class="particles-icon no-hover-effect" href="https://twitter.com/mgrimaldi_" target="_blank">
+                <img src="./assets/img/twitter.svg" alt="Twitter" width="40" height="40">
+            </a>
+        </li>
     </ul>
-  </body>
+</div>
+</body>
 </html>

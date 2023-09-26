@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1.0">
+    <title>Mental model of Hill Charts by Tate Johnson</title>
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/favicon167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon180.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="http://localhost:4000/share.png">
+    <meta name="og:type" content="article">
+    <meta name="og:url" content="http://localhost:4000/2020/02/01/mental-model-of-hill-charts.html">
+    <meta name="og:title" content="Mental model of Hill Charts">
+    <meta name="og:description" content="Hill charts are a simple way to see how a project is really going. They first appeared in Basecamp 3, but I’ve seen them used outside of Basecamp too. What...">
+    <meta name="og:image" content="http://localhost:4000/share.png">
+    <style type="text/css">
+      html {
+        background: #ffffff;
+        color: #444444;
+        font-family: "Georgia", "Times New Roman", serif;
+        font-size: 18px;
+      }
+
+      @media only screen and (min-width: 481px) {
+        html {
+          font-size: 21px;
+        }
+      }
+
+      body {
+        margin: 0 5%;
+      }
+
+      @media only screen and (min-width: 481px) {
+        body {
+          margin: 75px auto;
+          width: 700px;
+        }
+      }
+
+      h1 {
+        color: #111111;
+        font-size: 27px;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      @media only screen and (min-width: 481px) {
+        h1 {
+          font-size: 30px;
+        }
+      }
+
+      p,
+      ul,
+      ol {
+        margin: 0;
+        margin-bottom: 37px;
+        line-height: 30px;
+      }
+
+      ul,
+      ol {
+        padding: 0;
+      }
+
+      ul > li,
+      ol > li {
+        margin-left: 23px;
+      }
+
+      ul > li:not(:last-child),
+      ol > li:not(:last-child) {
+        margin-bottom: 9px;
+      }
+
+      blockquote {
+        border-left: 5px solid;
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      code {
+        font-size: 90%;
+        color: #008080;
+      }
+
+      @media only screen and (min-width: 481px) {
+        p,
+        ul,
+        ol {
+          line-height: 32px;
+        }
+      }
+
+      #title {
+        color: #111111;
+        font-size: 36px;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      @media only screen and (min-width: 481px) {
+        #title {
+          font-size: 60px;
+        }
+      }
+
+      #meta {
+        color: #111111;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Mental model of Hill Charts</h1>
+    <p>Hill charts are a simple way to see how a project is <em>really</em> going. They <a href="https://m.signalvnoise.com/new-in-basecamp-see-where-projects-really-stand-with-the-hill-chart/">first appeared in Basecamp 3</a>, but I’ve seen them <a href="https://medium.com/@bryceyork/how-and-why-i-totally-reinvented-our-companys-project-status-reporting-method-9e2b9cfbf805">used outside of Basecamp too</a>. What I like most is how they signal where uncertainty exists. Lots of uncertainty early on is to be expected. Lots of uncertainty half way through is super risky.</p>
+
+<p>When we decided to use hill charts I wanted to shortcut the philosophy of <a href="https://basecamp.com/shapeup">Shape Up</a> into a quick reference. Inspired by the <a href="https://alok.github.io/2019/06/18/mental-model-of-dental-hygiene/">mental model of dental hygiene</a> I wrote one for hill charts. With the help of my amazing colleagues we’ve adjusted it few times since then. Here we go:</p>
+
+<h1 id="dots-are-scopes">Dots are scopes</h1>
+
+<ul>
+  <li>Scopes reflect the meaningful parts of the problem that can be completed independently and in a short period of time — a few days or less. They are bigger than individual todos but much smaller than the whole project.</li>
+  <li>A scope is one thing to design, engineer, and integrate together. It solves part a part of the problem and is represented as a todo list.</li>
+</ul>
+
+<h1 id="lifecycle-of-a-scope">Lifecycle of a scope</h1>
+
+<ul>
+  <li>Scopes on the left most side have not yet started, but have buy-in from everyone on the project team. Scopes on the right most side are completed. Scopes anywhere in-between are in-flight.</li>
+  <li>Scopes are added during the <em>mapping</em>, or they’re added when we’re <em>doing the work</em>, or they’re added by <a href="#splitting-scopes">splitting scopes</a> into smaller scopes. Adding scopes is an important because it signals how much work we think is left.</li>
+  <li>Scopes can be renamed. We rename scopes when the current name doesn’t reflect the problem we’re trying to solve. Clear naming is important because it signals our understanding of the goal.</li>
+  <li>Scopes can be archived if we feel they’ve become irrelevant or our appetite has gone.</li>
+  <li>Scopes can be trashed if we made a mistake</li>
+</ul>
+
+<h1 id="splitting-scopes">Splitting scopes</h1>
+
+<ul>
+  <li>Scopes are split when we follow their <a href="#be-aware-of-curious-smells">curious smells</a>. Usually this means the old scope is too big, or we’ve been able to think about the problem in a different way.</li>
+  <li>Split a scope by making a new todolist. Leave a comment that summarises the key decisions from the old scope and leave a link to the old scope too. This gives everyone context to understand the split.</li>
+</ul>
+
+<h1 id="figuring-things-out">Figuring things out</h1>
+
+<ul>
+  <li>Scopes on the left hand side signal ambiguity and uncertainty. The only way to move them up the hill is to <em>do the work</em> and learn.</li>
+  <li>This is where todos would look like research, wire framing, prototyping, scaffolding, and designing (To the extent that the design is figuring things out. Designing a bunch of assets probably lives in on the right hand side).</li>
+  <li>Scopes move from the far left to the middle of the left hand side by figuring out how it should look and how it should be interacted with.</li>
+  <li>Scopes move from the middle of the left hand side to the top of the hill by figuring out how it should be built. Figuring out could mean some programming to help you gain confidence.</li>
+  <li>Scopes may oscillate between these two quartiles as they’re being figured out, but <a href="#be-aware-of-curious-smells">be aware of curious smells</a>.</li>
+</ul>
+
+<h1 id="at-the-top-of-the-hill">At the top of the hill</h1>
+
+<ul>
+  <li>Scopes at the top of the hill mean we’ve figured it how it will work and how it will be built (e.g. Proof of concept, including programming). It doesn’t mean that we’ve designed every pixel or that we’ve written every line of code. That’s <a href="#making-things-happen">making things happen</a>.</li>
+</ul>
+
+<h1 id="making-things-happen">Making things happen</h1>
+
+<ul>
+  <li>Scopes on the right hand side signal confidence and clarity. The only way to move forward is to continue <em>doing the work</em> and polishing.</li>
+  <li>This is where todos would look like high fidelity mock ups, integrating components, implementing all the edge cases, adding telemetry, polishing interactions, and tidying up.</li>
+</ul>
+
+<h1 id="check-daily">Check daily</h1>
+
+<ul>
+  <li>Ask yourself this question: Do you feel comfortable with what’s in-flight for the amount of time you have left? If not, kick off a discussion with the team. Do we need to shift expectations? Do we need to do more hammering?</li>
+  <li>Ask yourself this question: Do the other scopes look like what you’d expect? If not, dig further. Don’t wait and leave it to chance. Talking to each other is building clarity.</li>
+</ul>
+
+<h1 id="update-every-1-2-days">Update every 1-2 days</h1>
+
+<ul>
+  <li>Move scopes forward as we do and learn</li>
+  <li>Move scopes backward as we discover rabbit holes, flawed assumptions, or other setbacks.</li>
+  <li>Write a comment that names the scope and why you moved it. This gives everyone context to understand the change.</li>
+</ul>
+
+<h1 id="be-aware-of-curious-smells">Be aware of curious smells</h1>
+
+<ul>
+  <li>Scopes which oscillate forward and backward are a curious smell. Do we know what’s expected? Are we working on a flawed assumption? Did we discover a rabbit hole? How can we solve this a different way?</li>
+  <li>Scopes which take a long time to move are a curious smell. Is there a hidden scope? Are we trying to do too much? How can we solve this a different way?</li>
+  <li>Projects which have many scopes on the far left hand side are a curious smell. Are we moving too fast? Are we focusing on imagined tasks over integration tasks? What’s blocking us from completing other tasks first? How can we hone our focus?</li>
+  <li>Projects which have many in-flight scopes are a curious smell. Are we doing too much? Is our focus too split? Do we need to archive scopes or move them to the chowder list? Is it a signalling problem?</li>
+</ul>
+
+    <p id="meta">Written by <a href="/">Tate Johnson</a> on  1 Feb 2020. Subscribe to my blog's <a href="/feed.xml">RSS feed</a>.</p>
+  </body>
+</html>
